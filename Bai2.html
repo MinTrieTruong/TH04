@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px auto;
+        }
+
+        .wrapper{
+            height: 10000px;
+            width: 960px;
+            background-color: antiquewhite;
+        }
+
+        header{
+            height: 150px;
+            width: 960px;
+            background-color: #010101;
+            position: relative;
+        }
+
+        header img{
+            top: 20px;
+            left: 10px;
+            position: absolute;
+        }
+        header h2{
+            top: 20px;
+            left: 380px;
+            position: absolute;
+            color: rgb(147, 24, 24);
+            border-color: #F0E68C;
+            border-width: 2px;
+        }
+
+        header h4{
+            top:50px;
+            left:380px;
+            position: absolute;
+            color: #F0E68C;
+        }
+        header #frm{
+            position:absolute;
+            top: 10px;
+            right: 10px;
+        }
+        header #frm #txtS{
+            border: 1px solid gray;
+            padding: 2px;
+
+        }
+        header #frm #btnS{
+            border: 1px solid gray;
+            padding: 2px;
+            border-radius: 50%;
+            background-color: cadetblue;
+        }
+        nav{
+            position: absolute;
+            bottom: 3px;
+            right: 20px;
+        }
+        .menu li{
+            display: inline-table;
+            background-color: #576c85;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu li:hover{
+            background-color: #998110;
+        }
+        .menu li a{
+            color: white;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+        .menu li .sub-menu{
+            display: none;
+            background-color: #576c85;
+            height: 50px;
+            line-height: 50px;
+            position: absolute;
+        }
+        .menu li:hover .sub-menu{
+            display: block;
+            left: 0px;
+            top: 51px;
+        }
+        .menu li:nth-child(4){
+            position: relative;
+         }
+         .menu li .sub-menu li:nth_child(1){
+             position: absolute;
+            top: 2px;
+            left: 0px;
+            width:115px;
+         }
+
+         .menu li .sub-menu li:nth_child(2){
+            position: absolute;
+            top: 54px;
+            left: 0px;
+            width:115px;
+         }
+         .menu li .sub-menu li:nth_child(3){
+            position: absolute;
+            top: 106px;
+            left: 0px;
+            width:115px;
+         }
+        .menu li .sub-menu li:nth-child(2){
+            position: absolute;
+            top: 54px;
+            left: 0px;
+            width: 115px;
+        }
+
+        .menu li .sub-menu li:nth_child(3){
+            position: absolute;
+            top: 106px;
+            left: 0px;
+            width: 115px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content h3 {
+            margin-top: 20px;
+            color: #576c85;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/rose.jpg" alt="" srcset="" height="100" width="150">
+            <h2>FlowerBox 360</h2>
+            <h4>...to get your daily dose of luxury roses!</h4>
+            <form action ="" method="post" id="frm">
+                <input type="text" name="txtS" id="txtS" placeholder="Nhap" required>
+                <button type="submit" id="btnS">GO</button>
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Gift Baskets</a></li>
+                    <li><a href="#">Flowers Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Promotion</a></li>
+                            <li><a href="#">Gift Baskets</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+        
+            <h3>Home</h3>
+            <img src="../img/roses.jpg" alt="Luxury Roses in Box" />
+
+          
+            <h3>Promotion</h3>
+            <img src="../img/tung-bung-khuyen-mai-mung-ngay-quoc-te-phu-nu-8-3(2)(1).png" alt="Promotion on Roses" />
+
+            
+            <h3>Gift Baskets</h3>
+            <img src="../img/qua-tang-8_3-20_10-heny-garden-love.04_d2801f6080ec475baaf494c95bc74c13_master.jpg" alt="Gift Baskets with Roses and Gifts" />
+
+        
+            <h3>Flowers Services</h3>
+            <img src="../img/cam-hoa-hong-5-bong.jpg" alt="Flowers Arrangements and Services" />
+        </div>
+
+        <footer></footer>
+    <div>
+</body>
+</html>
